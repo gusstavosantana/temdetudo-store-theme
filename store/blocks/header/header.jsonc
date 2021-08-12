@@ -9,7 +9,6 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -29,22 +28,8 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "Devido ao COVID, o prazo de entrega poderá ser aumentado"
     }
-  },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -71,7 +56,6 @@
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -92,7 +76,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "/arquivos/tdt-logo.png?v=2",
       "width": "180"
     }
   },
@@ -123,9 +107,9 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#bebidas",
+      "menu-item#eletrodomesticos",
+      "menu-item#smartphones"
     ],
     "props": {
       "orientation": "vertical"
@@ -136,8 +120,14 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "url": "/arquivos/tdt-logo.png?v=2",
+      "width": "150"
+    }
+  },
+
+  "search-bar": {
+    "props": {
+      "blockClass": "header-search"
     }
   }
 }

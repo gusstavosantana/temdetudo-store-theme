@@ -4,200 +4,56 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#bebidas",
+      "menu-item#eletrodomesticos",
+      "menu-item#smartphones"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#bebidas": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-bebidas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "category-header",
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/bebidas",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Bebidas",
+        "text": "Bebidas"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
+    }
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "menu-item#eletrodomesticos": {
     "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#category-apparel"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-apparel": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
-    ]
-  },
-  "menu-item#category-apparel-clothing": {
-    "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-eletrodomesticos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "category-header",
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/eletrodomesticos",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Eletrodomésticos",
+        "text": "Eletrodomésticos"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#smartphones": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-smartphones",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "category-header",
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/smartphones",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-apparel-eyeglasses": {
-    "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
-  "menu-item#category-home": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
-  "menu-item#more": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
-  },
-  "vtex.menu@2.x:submenu#more": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
-  },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
-    ]
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
-    }
-  },
-  "menu-item#faq": {
-    "props": {
-      "id": "menu-item-faq",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
-      }
-    }
-  },
-  "menu-item#contact-us": {
-    "props": {
-      "id": "menu-item-contact-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Smartphones",
+        "text": "Smartphones"
       }
     }
   }

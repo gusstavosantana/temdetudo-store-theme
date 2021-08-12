@@ -2,31 +2,27 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf2",
       "newsletter"
     ]
   },
-
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "/arquivos/tdt-banner2.jpg",
+          "mobileImage": "/arquivos/tdt-banner2.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "/arquivos/tdt-banner1.jpg",
+          "mobileImage": "/arquivos/tdt-banner1.jpg"
         }
       ]
     }
@@ -40,13 +36,13 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "fullWidth": true
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Mais vendidos",
       "blockClass": "shelfTitle"
     }
   },
@@ -57,7 +53,7 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByNameDESC"
     }
   },
   "slider-layout#demo-products": {
@@ -72,32 +68,46 @@
       "blockClass": "shelf"
     }
   },
-
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Melhores produtos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByPriceASC"
+    }
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "imageUrl": "/arquivos/tdt-smartphone.png",
+      "headline": "Smartphones",
+      "subhead": "Toda linha de smartphones com 10% off",
+      "callToActionText": "Conferir",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }

@@ -1,0 +1,8 @@
+.styledLinkContent--category-header {
+    color: #001219;
+    font-weight: bold;
+}
+
+.styledLinkContent--category-header:hover {
+    color: #ee9b00;
+}

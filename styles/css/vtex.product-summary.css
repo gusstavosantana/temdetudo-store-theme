@@ -11,22 +11,16 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 40em) {
-  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
-    display: none;
-  }
-}
-
 .nameContainer {
-  justify-content: start;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  justify-content: start;
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
   color: #2E2E2E;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .container {
@@ -39,4 +33,10 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
 }

@@ -21,7 +21,36 @@
 }
 
 .slide--shelf {
-  margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
+  margin-bottom: 25px;
+}
+
+.paginationDot {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  background-color: #efecec;
+}
+
+.paginationDot:hover,
+.paginationDot--isActive {
+  width: 30px !important;
+  background-color: #0a9396;
+}
+
+.caretIcon  {
+  color:#0a9396 !important;
+}
+
+.sliderTrackContainer--carousel {
+  max-width: none;
+}
+
+.imageElement--carousel {
+  max-height: none !important;
+}
+
+.sliderLayoutContainer--shelf {
+  margin-bottom: 30px;
 }

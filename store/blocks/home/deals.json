@@ -19,13 +19,13 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "src": "/arquivos/tdt-free.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "Frete grátis",
       "blockClass": "deals"
     }
   },
@@ -37,13 +37,13 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "src": "/arquivos/tdt-truck.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "Entrega expressa",
       "blockClass": "deals"
     }
   },
@@ -55,13 +55,13 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
+      "src": "/arquivos/tdt-store.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "Retire na loja",
       "blockClass": "deals"
     }
   },
@@ -73,13 +73,13 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "src": "/arquivos/tdt-promo.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "Promoções todos os dias",
       "blockClass": "deals"
     }
   }
