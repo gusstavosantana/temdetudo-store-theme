@@ -7,6 +7,14 @@
   transition: opacity 200ms ease-in-out;
 }
 
+.container :global(.vtex-button) {
+  padding: 5px 15px;
+  border-color: #005f73;
+  border-radius: 0;
+  text-transform: none;
+  background-color: #005f73;
+}
+
 .container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 1;
 }
