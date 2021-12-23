@@ -1,0 +1,14 @@
+.scroll-top button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #005f73;
+}
+
+.scroll-top button svg {
+    transform: scale(.7);
+}
+
+.scroll-top button svg path {
+    fill: #fff;
+}

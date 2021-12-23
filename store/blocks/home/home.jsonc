@@ -9,7 +9,8 @@
       "info-card#home",
       "rich-text#shelf-title2",
       "flex-layout.row#shelf2",
-      "newsletter"
+      "newsletter",
+      "scroll-top"
     ]
   },
   "list-context.image-list#demo": {

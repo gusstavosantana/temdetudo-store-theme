@@ -1,0 +1,107 @@
+body[data-zoom="10"] {
+    zoom: 1.1
+}
+
+body[data-zoom="20"] {
+    zoom: 1.2
+}
+
+body[data-zoom="30"] {
+    zoom: 1.3
+}
+
+body[data-grayscale="true"] {
+    filter: grayscale(100%);
+}
+
+/* Accessibility bar */
+.accessibility {
+  display: flex;
+  padding: 5px 20px;
+  background-color: #024654;
+}
+
+.accessibility__item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.accessibility__item--grayscale {
+  margin-left: 5px;
+  padding-left: 15px;
+  border-left: 1px solid #005f73;
+}
+
+.accessibility__icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.accessibility__icons--zoom {
+  background-image: url("/arquivos/tdt-zoom.png?v=1");
+}
+
+.accessibility__icons--grayscale {
+  background-image: url("/arquivos/tdt-grayscale.png?v=1");
+}
+
+.accessibility__text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.accessibility__toggle {
+  width: 42px;
+  height: 21px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.accessibility__toggle::after {
+  top: 50%;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  transition: .3s;
+  border-radius: 50%;
+  background-color: #121212;
+}
+
+.accessibility__toggle--active::after {
+    left: 22px;
+}
+
+.accessibility__toggle-item {
+  width: 21px;
+  height: 21px;
+  z-index: 2;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.accessibility__toggle-item--off {
+  background-size: 7px;
+  background-image: url("/arquivos/tdt-close.png?v=1");
+}
+
+.accessibility__toggle-item--on {
+  background-size: 10px;
+  background-image: url("/arquivos/tdt-check.png?v=1");
+}
+
