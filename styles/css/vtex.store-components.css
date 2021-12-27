@@ -125,6 +125,19 @@
   background-color: #005f73;
 }
 
+.swiperBullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  background-color: #818181;
+}
+
+.swiperBullet:hover,
+.swiperBullet--active {
+  width: 30px !important;
+  background-color: #0a9396;
+}
+
 @media only screen and (min-width: 640px) {
   .newsletter {
     background-image: url("/arquivos/tdt-email.png");

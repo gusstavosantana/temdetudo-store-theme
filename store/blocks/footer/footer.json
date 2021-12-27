@@ -4,12 +4,14 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "rich-text#footer-credits"
+      "rich-text#footer-credits",
+      "scroll-top"
     ]
   },
   "footer-layout.mobile": {
     "children": [
-      "rich-text#footer-credits"
+      "rich-text#footer-credits",
+      "scroll-top"
     ]
   },
   "rich-text#footer-credits": {
